@@ -26,7 +26,7 @@ You can read, manipulate and write the featws-file like so:
 
 ```js
     var fs = require('fs')
-      , featws = require('featws')
+      , featws = require('js-featws')
 
     var config = featws.parse(fs.readFileSync('./config.featws', 'utf-8'))
 
