@@ -90,3 +90,6 @@ nocomment = this\; this is not a comment
 
 # this next one is not a comment!  it's escaped!
 noHashComment = this\# this is not a comment
+
+# this next one is not a comment, because in Feat the # is not a comment marker! 
+noCommentWithHash = this # this is not a comment

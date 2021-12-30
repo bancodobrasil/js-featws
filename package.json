@@ -1,13 +1,13 @@
 {
-  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
-  "name": "ini",
-  "description": "An ini encoder/decoder for node",
-  "version": "2.0.1",
+  "author": "Raphael Pinto",
+  "name": "js-featws",
+  "description": "An featws encoder/decoder for node based on Ini",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/npm/ini.git"
+    "url": "git://github.com/bancodobrasil/js-featws.git"
   },
-  "main": "lib/ini.js",
+  "main": "lib/featws.js",
   "scripts": {
     "eslint": "eslint",
     "lint": "npm run eslint -- lib test",
@@ -29,7 +29,7 @@
   },
   "license": "ISC",
   "files": [
-    "ini.js"
+    "featws.js"
   ],
   "engines": {
     "node": ">=10"

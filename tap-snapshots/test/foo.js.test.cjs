@@ -54,7 +54,8 @@ Null Object {
     "a.b.c": Null Object {
       "a.b.c": "abc",
       "nocomment": "this; this is not a comment",
-      "noHashComment": "this# this is not a comment",
+      "noCommentWithHash": "this # this is not a comment",
+      "noHashComment": "this\\\\# this is not a comment",
     },
     "x.y.z": "xyz",
   },
@@ -107,6 +108,7 @@ x.y.z=xyz
 a.b.c=abc
 nocomment=this\\; this is not a comment
 noHashComment=this\\# this is not a comment
+noCommentWithHash=this # this is not a comment
 
 `
 

@@ -3,7 +3,7 @@ const tap = require('tap')
 const test = tap.test
 const fs = require('fs')
 const path = require('path')
-const fixture = path.resolve(__dirname, './fixtures/foo.ini')
+const fixture = path.resolve(__dirname, './fixtures/foo.featws')
 const data = fs.readFileSync(fixture, 'utf8')
 
 tap.cleanSnapshot = s => s.replace(/\r\n/g, '\n')

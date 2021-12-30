@@ -1,6 +1,6 @@
 // test that parse(stringify(obj)
 
-var ini = require('../')
+var featws = require('../')
 var test = require('tap').test
 
 var data = {
@@ -12,9 +12,9 @@ var data = {
 
 test('parse(stringify(x)) is same as x', function (t) {
   for (var k in data) {
-    var s = ini.stringify(data[k])
+    var s = featws.stringify(data[k])
     t.comment(s, data[k])
-    t.same(ini.parse(s), data[k])
+    t.same(featws.parse(s), data[k])
   }
 
   t.end()

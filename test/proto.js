@@ -1,5 +1,5 @@
 /* eslint no-proto: "off" */
-var ini = require('../')
+var featws = require('../')
 var t = require('tap')
 
 var data = `
@@ -19,9 +19,10 @@ __proto__[] = so you deserve arrays
 thanks = true
 [ctor.constructor.prototype]
 foo = asdfasdf
+foo2 = asdfasdf # asdfasdf
 `
 
-var res = ini.parse(data)
+var res = featws.parse(data)
 
 t.same(res, Object.assign(Object.create(null), {
   'constructor.prototype.foo': 'asdfasdf',
@@ -42,6 +43,7 @@ t.same(res, Object.assign(Object.create(null), {
     constructor: Object.assign(Object.create(null), {
       prototype: Object.assign(Object.create(null), {
         foo: 'asdfasdf',
+        foo2: 'asdfasdf # asdfasdf',
       }),
     }),
   }),
