@@ -93,3 +93,15 @@ noHashComment = this\# this is not a comment
 
 # this next one is not a comment, because in Feat the # is not a comment marker! 
 noCommentWithHash = this # this is not a comment
+
+[[list]]
+a = b
+
+[[list]]
+a = c
+
+[createasnonlist]
+a = b
+
+[[createasnonlist]]
+casted = tolist

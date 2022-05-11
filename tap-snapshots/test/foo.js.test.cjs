@@ -36,8 +36,24 @@ Null Object {
     "this is included",
   ],
   "br": "warm",
+  "createasnonlist": Array [
+    Null Object {
+      "a": "b",
+    },
+    Null Object {
+      "casted": "tolist",
+    },
+  ],
   "eq": "eq=eq",
   "false": false,
+  "list": Array [
+    Null Object {
+      "a": "b",
+    },
+    Null Object {
+      "a": "c",
+    },
+  ],
   "null": null,
   "o": "p",
   "s": "something",
@@ -100,6 +116,18 @@ cr[]=eight
 [a.b.c]
 e=1
 j=2
+
+[[list]]
+a=b
+
+[[list]]
+a=c
+
+[[createasnonlist]]
+a=b
+
+[[createasnonlist]]
+casted=tolist
 
 [x\\.y\\.z]
 x.y.z=xyz
